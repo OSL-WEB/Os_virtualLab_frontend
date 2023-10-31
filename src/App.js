@@ -7,6 +7,7 @@ import ForgotPassword from "./ForgotPassword";
 import UserProfile from "./UserProfile";
 import EmailVerify from './EmailVerify';
 import ResetPassword from './ResetPassword'; 
+import ApproveUser from './ApproveUser';
 
 function App() {
   return(
@@ -20,6 +21,7 @@ function App() {
         <Route path='/AdminPanel/user-profile' element={<UserProfile />} />
         <Route path='/verify/:token' element={<EmailVerify />} />
         <Route path='/reset-password/:token' element={<ResetPassword />} />
+        <Route path="/approve/:token" element={<ApproveUser />} />
       </Routes>
     </BrowserRouter>
   );
