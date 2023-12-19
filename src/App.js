@@ -42,6 +42,7 @@ const App = () => {
           <Route path='/AdminPanel/user-profile/view-content' element={<Contentt></Contentt>} />
           <Route path='/verify/:token' element={<EmailVerify />} />
           <Route path='/reset-password/:token' element={<ResetPassword />} />
+          <Route path='/approve/:token' element={<ApproveUser />} />
           </Routes>
           
         
